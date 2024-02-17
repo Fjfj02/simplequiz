@@ -35,7 +35,7 @@ class QuizUI:
     def get_next_question(self):
         '''function to get next question'''
         self.canvas.config(bg="white")
-        if self.game_on():            
+        if self.quiz.game_on():            
             self.score_label.config(text=f"Score: {self.quiz.score}")
             q_text = self.quiz.next_question()
             self.canvas.itemconfig(self.question_text, text=q_text)

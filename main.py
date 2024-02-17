@@ -18,7 +18,6 @@ quiz = QuizBrain(question_bank)
 
 
 #game running
-
 quiz_ui = QuizUI(quiz)
 
 # while quiz.game_on():
